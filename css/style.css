@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(23, 164, 23);
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #e0f6ff)
+  }
+
+  .rock {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -50px;
+    animation: rock-animation 2s infinite linear;
+  }
+
+  .pikachu {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .jump {
+    animation: jump 500ms ease-out;
+  }
+
+  .clouds {
+    position: absolute;
+    width: 500px;
+    animation: clouds-animation 10s infinite linear;
+  }
+
+  @keyframes rock-animation {
+    from{
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+  }
+
+  @keyframes jump {
+    
+    0% {
+      bottom: 0;
+    }
+
+    40% {
+      bottom: 170px;
+    }
+
+    50% {
+      bottom: 180px;
+    }
+
+    60% {
+      bottom: 180px;
+    }
+
+    70% {
+      bottom: 180px;
+    }
+
+    75% {
+      bottom: 170px;
+    }
+
+    80% {    
+      bottom: 150px;
+    }
+
+    85% {
+      bottom: 120px;
+    }
+
+    90% {
+      bottom: 100px;
+    }
+
+    95% {
+      bottom: 50px;
+    }
+
+    100% {
+      bottom: 0;
+    }
+  }
+
+  @keyframes clouds-animation {
+    from{
+      right: -550px;
+    }
+
+    to {
+      right: 100%;
+    }
+  }
