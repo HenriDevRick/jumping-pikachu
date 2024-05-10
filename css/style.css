@@ -38,6 +38,13 @@
     animation: clouds-animation 10s infinite linear;
   }
 
+  .jump-count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+
   @keyframes rock-animation {
     from{
         right: 0;
